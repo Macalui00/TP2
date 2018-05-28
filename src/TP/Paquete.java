@@ -1,10 +1,10 @@
 package TP;
 
 public abstract class Paquete {
-	private IP IPdest;
-	private IP IPorig;
-	private String tipo;
-	private int TTL;
+	protected IP IPdest;
+	protected IP IPorig;
+	protected String tipo;
+	protected int TTL;
 	
 	
 	public int getTTL() {
@@ -39,11 +39,13 @@ public abstract class Paquete {
 		this.tipo = tipo;
 	}
 
-	public Paquete(IP ipd, IP ipo, String t) {
+	public Paquete(IP ipd, IP ipo, String t, int ttl) {
 		IPdest = ipd;
 		IPorig = ipo;
 		tipo = t;
+		TTL = ttl;
 	}
+	
 	public boolean esDeServicio() {
 		
 	}

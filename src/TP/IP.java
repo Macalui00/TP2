@@ -26,6 +26,15 @@ public class IP {
 		Cocteto = s.nextLine();
 	}*/
 	public void mostrar() {
-		System.out.println(nombre);
+		System.out.println("Primer octeto: " + Pocteto + "Segundo octeto: " + 
+			Socteto + "Tercer octeto: " + Tocteto + "Cuarto octeto: " + Cocteto);
+	}
+	public IP DireccionRed() {
+		IP Dred = new IP("", "", "", "");
+		Dred.Cocteto = Cocteto;
+		Dred.Pocteto = Pocteto;
+		Dred.Socteto = Socteto;
+		Dred.Tocteto = Tocteto;
+		return Dred;
 	}
 }
