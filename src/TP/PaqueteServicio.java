@@ -1,5 +1,5 @@
 package TP;
 
-public class PaqueteServicio {
-
+public class PaqueteServicio extends Paquete {
+	
 }
