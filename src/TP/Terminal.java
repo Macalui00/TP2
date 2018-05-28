@@ -37,7 +37,7 @@ public class Terminal {
 			} else if (P.tipo == "ICMPResponse") {
 					System.out.println("Recibido ICMP desde equipo_origen [timestamp]");
 			} else if (P.tipo == "SendMessage") {
-				//Deberia imprimir el mensaje dentro del paquete otra variable?;
+				//Deberia imprimir el mensaje dentro del paquete otra variable?
 			}
 		}
 	}
