@@ -14,7 +14,8 @@ public class IP {
 		Tocteto = To;
 		Cocteto = Co;
 	}
-	/*public void obtenerIP() {
+	/*
+	 * public void obtenerIP() {
 		Scanner s = new Scanner(System.in);
 		System.out.println("Ingrese primer octeto: ");
 		Pocteto = s.nextLine();
@@ -24,7 +25,8 @@ public class IP {
 		Tocteto = s.nextLine();
 		System.out.println("Ingrese cuarto octeto: ");
 		Cocteto = s.nextLine();
-	}*/
+	}
+	*/
 	public void mostrar() {
 		System.out.println("Primer octeto: " + Pocteto + "Segundo octeto: " + 
 			Socteto + "Tercer octeto: " + Tocteto + "Cuarto octeto: " + Cocteto);
