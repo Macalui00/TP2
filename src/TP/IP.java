@@ -3,16 +3,16 @@ package TP;
 import java.util.Scanner;
 
 public class IP {
-	private String Pocteto;
-	private String Socteto;
-	private String Tocteto;
-	private String Cocteto;
+	private int oct1;
+	private int oct2;
+	private int oct3;
+	private int oct4;
 	
-	public IP(String Po, String So, String To, String Co) {
-		Pocteto = Po;
-		Socteto = So;
-		Tocteto = To;
-		Cocteto = Co;
+	public IP(int po, int so, int to, int co) {
+		oct1 = po;
+		oct2 = so;
+		oct3 = to;
+		oct4 = co;
 	}
 	/*
 	 * public void obtenerIP() {
@@ -27,12 +27,13 @@ public class IP {
 		Cocteto = s.nextLine();
 	}
 	*/
-	public void mostrar() {
-		System.out.println("Primer octeto: " + Pocteto + "Segundo octeto: " + 
-			Socteto + "Tercer octeto: " + Tocteto + "Cuarto octeto: " + Cocteto);
+	
+	@Override
+	public String toString() {
+		return oct1 + "." + oct2 + "." + oct3 + "." + oct4;
 	}
 	public IP DireccionRed() {
-		IP Dred = new IP("", "", "", "");
+		IP Dred = new IP(0,0,0,0);
 		Dred.Cocteto = Cocteto;
 		Dred.Pocteto = Pocteto;
 		Dred.Socteto = Socteto;
